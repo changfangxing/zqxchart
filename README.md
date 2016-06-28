@@ -5,7 +5,7 @@
 ==========
   1.折线图
   --------
-      通过代码设置：
+      //通过代码设置：
       LineChart lineChart = (LineChart) findViewById(R.id.linechart);
       LineChartData lineChartData = LineChartData.builder()
               .setXdata(xdata)//x轴数据
@@ -16,7 +16,7 @@
               .setAnimType(Anim.ANIM_ALPHA)//动画效果，目前仅支持两种
               .build();
       lineChart.setChartData(lineChartData);
-      #通过xml设置：
+      //通过xml设置：
       <?xml version="1.0" encoding="utf-8"?>
       <LinearLayout
           xmlns:android="http://schemas.android.com/apk/res/android"
@@ -38,7 +38,7 @@
                   />
             
       </LinearLayout>
-      #res/下新建 attrs.xml
+      // res/下新建 attrs.xml
       <!-- 折线图样式属性 -->
       <declare-styleable name="zqxchart_line">
           <!-- 坐标系颜色 -->
@@ -75,7 +75,7 @@
       </declare-styleable>
   2.柱状图
   --------
-      #通过代码设置
+      //通过代码设置
       Histogram histogramChart = (Histogram) findViewById(R.id.histogramchart);
       HistogramData histogramData = HistogramData.builder()
               .setXdata(xdata)
@@ -115,10 +115,9 @@
           <!-- y轴刻度点数量 -->
           <attr name="hyPointCount" format="integer"/>
       </declare-styleable>
-      #也可以通过代码和 arrays.xml 设置每个x坐标对应柱状图的颜色
-      #代码可以通过新建一个color 数组并调用
-        setColors(xxx);
-      #arrays.xml color 个数与数据个数想对应
+      //也可以通过代码和 arrays.xml 设置每个x坐标对应柱状图的颜色,代码可以通过新建一个color 数组并调用
+          setColors(xxx);
+      //arrays.xml color 个数与数据个数想对应
         <!-- 饼状图颜色属性 -->
         <integer-array name="pie_colors" >
             <item>@color/colorPrimary</item>
@@ -133,7 +132,7 @@
         </integer-array>
   3.饼状图
   --------
-  目前还未完善 例子再MainActivity中
+  目前还未完善 例子在MainActivity中
   
 待完成
 ======
