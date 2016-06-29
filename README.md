@@ -13,7 +13,7 @@ maven：
           
 gradle：
 -------
-     compile 'com.zqx.chart:(冒号)chart:(冒号)0.1'
+     compile 'com.zqx.chart:chart:0.1'
 
 使用方法：
 ==========
