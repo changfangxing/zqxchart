@@ -8,7 +8,7 @@ maven：<dependency>
             <type>pom</type>
           </dependency>
           
-gradle：compile 'com.zqx.chart:chart:0.1'
+gradle：compile 'com.zqx.chart\:chart\:0.1'
 
 使用方法：
 ==========
